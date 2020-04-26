@@ -7,7 +7,8 @@ public class flashdrive : MonoBehaviour
 {
     void OnMouseDown()
     {
-        Debug.Log("Mouse down");
+        Debug.Log("Предмет взят.");
+        Destroy(gameObject);
     }
 
      void OnTriggerStay2D(Collider2D other)
