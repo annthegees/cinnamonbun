@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class flashdrive : MonoBehaviour
 {
+    public new GameObject gameObject;
     void OnMouseDown()
     {
         Debug.Log("Предмет взят.");
-        Destroy(gameObject);
+        transform.position = new Vector3(-10f, -2f, 0f);
+        gameObject.GetComponent<inventory>().Add(1);
     }
 
      void OnTriggerStay2D(Collider2D other)

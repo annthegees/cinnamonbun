@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class detective : MonoBehaviour
 {
-    Rigidbody2D rigidbody2D;
+    new Rigidbody2D rigidbody2D;
     // Start is called before the first frame update
     void Start()
     {
