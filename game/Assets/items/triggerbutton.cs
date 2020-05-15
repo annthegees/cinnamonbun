@@ -1,18 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
+using UnityEngine.UI;
 
 public class triggerbutton : MonoBehaviour
 {
     public Button butt;
     public void OnTriggerStay2D(Collider2D collision)
     {
-        butt.SetEnabled(true);
+        butt.enabled = true;
     }
     public void OnTriggerExit2D (Collider2D collision)
     {
-        butt.SetEnabled(false);
+        butt.enabled = false;
     }
     // Start is called before the first frame update
     
