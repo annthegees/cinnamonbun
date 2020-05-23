@@ -23,6 +23,6 @@ public class inventory : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(massive[0]);
+        //Debug.Log(massive[0]);
     }
 }
